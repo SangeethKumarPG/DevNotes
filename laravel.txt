@@ -1,0 +1,13 @@
+To create a larval project - composer create-project laravel/laravel example-app
+To start app - php artisan serve 
+Default url is localhost:8000
+
+To create project using laravel:- laravel new project name
+
+To change the port of the server of the app :- php artisan serve --port=portnumber
+
+To show parked links in valet - valet paths
+
+To park - valet park then use valet link
+
+To forget the parked path - valet forget

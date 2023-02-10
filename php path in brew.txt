@@ -1,0 +1,19 @@
+var - /opt/homebrew/etc/var/www
+
+
+Change ownership -   /opt/homebrew/Cellar/httpd/2.4.54_1/bin
+  /opt/homebrew/Cellar/httpd/2.4.54_1/bin/httpd
+  /opt/homebrew/opt/httpd
+  /opt/homebrew/opt/httpd/bin
+  /opt/homebrew/var/homebrew/linked/httpd
+
+
+
+LoadModule php_module /opt/homebrew/opt/php/lib/httpd/modules/libphp.so
+
+    <FilesMatch \.php$>
+        SetHandler application/x-httpd-php
+    </FilesMatch>
+
+Finally, check DirectoryIndex includes index.php
+    DirectoryIndex index.php index.html
